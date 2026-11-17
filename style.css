@@ -210,7 +210,8 @@ body {
   #opp {
     display: flex;
     flex-direction: row;
-    gap: 9px
+    gap: 9px;
+    left: 5%;
   }
   #ctt {
     position: absolute;
