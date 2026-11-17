@@ -312,4 +312,24 @@ br { display: none; }
 #pt2, #pt3, #professionals, #af, #en {
   margin: 2rem 0;
 }
+#pt2, #professionals, #af {
+  position: static;
+}
+
+#s2 {
+  z-index: 2;
+}
+
+#s1 {
+  margin-bottom: 3rem;
+}
+#fim {
+  width: 100%;
+  margin: 0;
+  border-radius: 0;
+}
+
+#en {
+  margin: 0;
+}
   }
