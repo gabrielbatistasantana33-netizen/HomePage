@@ -293,52 +293,44 @@ body {
     width: 95%;
     height: auto;
     }
-  #methover, #equiver, #equipever, #sn, #fim {
+#methover, #equiver, #equipever, #sn {
   position: static;
   display: block;
   width: 92%;
   height: auto;
   margin: 2rem auto;
 }
-
 #professionals > h1 {
   position: static;
   margin: 1.5rem auto 0;
   text-align: center;
   font-size: 1.5rem;
 }
-
 br { display: none; }
-
-#pt2, #pt3, #professionals, #af, #en {
+#pt2, #pt3, #professionals, #af {
+  position: static;
   margin: 2rem 0;
 }
-
-#pt2, #professionals, #af {
-  position: static;
-}
-
-#fim {
-  width: 100%;
-  margin: 0;
-  border-radius: 0;
-}
-
-#en {
-  margin: 0;
-}
-
 #s2 {
-  position: relative;
-  left: auto;
-  top: auto;
+  position: static;
   display: block;
   width: 50%;
-  margin: -8rem auto 0;
-  z-index: 2;
+  height: auto;
+  margin: 1rem auto 0;
 }
 
 #s1 {
   margin-bottom: 2rem;
+}
+#en {
+  margin: 0;
+}
+#fim {
+  position: static;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  border-radius: 0;
 }
   }
