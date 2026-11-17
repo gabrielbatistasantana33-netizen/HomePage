@@ -293,7 +293,7 @@ body {
     width: 95%;
     height: auto;
     }
-    #methover, #equiver, #equipever, #sn, #fim {
+  #methover, #equiver, #equipever, #sn, #fim {
   position: static;
   display: block;
   width: 92%;
@@ -307,22 +307,17 @@ body {
   text-align: center;
   font-size: 1.5rem;
 }
+
 br { display: none; }
 
 #pt2, #pt3, #professionals, #af, #en {
   margin: 2rem 0;
 }
+
 #pt2, #professionals, #af {
   position: static;
 }
 
-#s2 {
-  z-index: 2;
-}
-
-#s1 {
-  margin-bottom: 3rem;
-}
 #fim {
   width: 100%;
   margin: 0;
@@ -331,5 +326,19 @@ br { display: none; }
 
 #en {
   margin: 0;
+}
+
+#s2 {
+  position: relative;
+  left: auto;
+  top: auto;
+  display: block;
+  width: 50%;
+  margin: -8rem auto 0;
+  z-index: 2;
+}
+
+#s1 {
+  margin-bottom: 2rem;
 }
   }
