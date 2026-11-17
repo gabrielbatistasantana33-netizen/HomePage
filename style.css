@@ -196,6 +196,13 @@ body {
 #equiver {
   display: none
 }
+
+html {
+  font-size: 16px !important;
+  -webkit-text-size-adjust: 100% !important;
+  text-size-adjust: 100% !important;
+}
+
 @media (max-width: 768px) {
   #studio {
     font-size: 0.5rem;
@@ -308,3 +315,19 @@ body {
     margin: auto;
     }
   }
+
+@supports (-webkit-touch-callout: none) {
+  @media (max-width: 768px) {
+    #studio {
+      font-size: 0.5rem; 
+      -webkit-text-size-adjust: none;
+    }
+    #s2 { top: 240px; }
+    #methover { top: 192px; }
+    #equiver { top: 1360px; }
+    #equipever { top: -32px; }
+    #professionals > h1 { top: -160px; }
+    #sn { top: -240px; }
+    #fim { top: 3120px; }
+  }
+}
