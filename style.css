@@ -245,8 +245,9 @@ body {
     top: 15rem;
   }
   #db {
+    position: absolute;
     left: 89.5%;
-    top: 2rem;
+    top: 1rem;
     width: 9%
   }
   #metho {
