@@ -214,11 +214,10 @@ body {
     gap: 5px
   }
   #ctt {
-  position: static;
-  width: auto;
-  white-space: nowrap;
-  padding: 3px 8px;
-  margin: 0;
+    position: absolute;
+    top: 1rem;
+    right: 12%;
+    width: 14%;
 }
   #fs {
     max-width: 100%;
