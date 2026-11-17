@@ -196,6 +196,7 @@ body {
 #equiver {
   display: none
 }
+
 @media (max-width: 768px) {
   #studio {
     font-size: 0.5rem;
@@ -255,9 +256,6 @@ body {
     display: block;
     width: 90%;
     height: auto;
-    position: absolute;
-    top: 12rem;
-    left: 5%
   }
   #equi {
     display: none
@@ -266,9 +264,6 @@ body {
     display: block;
     width: 90%;
     height: auto;
-    position: absolute;
-    top: 85rem;
-    left: 5%
   }
   #oc{
     display: none
@@ -280,15 +275,9 @@ body {
     display: block;
     width: 90%;
     height: auto;
-    position: absolute;
-    top: -2rem;
-    left: 5%
   }
   #professionals > h1 {
-    margin: auto;
-    position: absolute;
     font-size: 1.5rem;
-    top: -10rem;
   }
   #af {
     position: relative;
@@ -303,8 +292,24 @@ body {
   #fim {
     width: 95%;
     height: auto;
-    position:absolute;
-    top: 195rem;
-    margin: auto;
     }
+    #methover, #equiver, #equipever, #sn, #fim {
+  position: static;
+  display: block;
+  width: 92%;
+  height: auto;
+  margin: 2rem auto;
+}
+
+#professionals > h1 {
+  position: static;
+  margin: 1.5rem auto 0;
+  text-align: center;
+  font-size: 1.5rem;
+}
+br { display: none; }
+
+#pt2, #pt3, #professionals, #af, #en {
+  margin: 2rem 0;
+}
   }
