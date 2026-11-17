@@ -25,10 +25,11 @@ body {
 
 #studio {
     display: flex;
+    flex-direction: row;
     gap:350px;
-     position: sticky;
-    top: 0;            
-    z-index: 100;   
+    position: sticky;
+     z-index: 1000;
+    top: 0;             
   background:
     linear-gradient(
       200deg,
@@ -62,6 +63,12 @@ body {
     color:#e8d5b5;
 }
 
+#opp {
+  display: flex;
+  flex-direction: row;
+  gap: 20px
+}
+
 #op1:hover {
     color: #ffa552;
     text-shadow: 0 0 20px rgba(255, 247, 221, 0.79);
@@ -88,12 +95,9 @@ body {
 }
 
 #db {
-  position: absolute;
-  top: 19px;
-  left: 1420px;
-  width: 35px;
-  height: 40px;
-  object-fit: contain;
+  position: static;
+  height: 100%;
+  width: 5%
 }
 
 #ctt {background: linear-gradient(135deg, #f1e2bd 0%, #d4b06a 55%, #b8924a 100%);
@@ -206,7 +210,8 @@ body {
     justify-content: center;
     border-top-right-radius: 16px;
     border-top-left-radius: 16px;
-    position: relative;
+    position: sticky;
+     z-index: 1000;
   }
   #opp {
     display: flex;
