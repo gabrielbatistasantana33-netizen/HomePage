@@ -26,7 +26,6 @@ body {
 #studio {
     display: flex;
     flex-direction: row;
-    gap:350px;
     position: sticky;
      z-index: 1000;
     top: 0;             
@@ -58,15 +57,17 @@ body {
 }
 
 #op {
-    display: flex;
+  display: flex;
     gap: 20px;
     color:#e8d5b5;
+    justify-content: flex-end;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 #opp {
   display: flex;
-  flex-direction: row;
-  gap: 20px
+  gap: 5%;
 }
 
 #op1:hover {
@@ -179,17 +180,6 @@ body {
   left: 200px;
 }
 
-#sn {
-  text-align: center;
-  border-radius: 20%;
-  margin-left: 180px
-}
-
-#fim {
-  border-radius: 2.5%;
-  height: 450px;
-}
-
 #methover {
   display: none
 }
@@ -199,6 +189,35 @@ body {
 }
 #equiver {
   display: none
+}
+
+br {
+  display: none
+}
+
+#s2 {
+  position: static;
+  display: block;
+  width: 45%;
+  height: auto;
+  margin: 2rem auto;
+}
+
+#metho, #equi, #equipe, #sn, #fs, #oc {
+  position: static;
+  display: block;
+  width: 92%;
+  height: auto;
+  margin: 2rem auto;
+}
+
+#fim {
+    position: static;
+    display: block;
+    width: 95%;
+    height: auto;
+    margin: 2rem auto;
+    border-radius: 2.5%;
 }
 
 @media (max-width: 768px) {
@@ -215,7 +234,8 @@ body {
   #opp {
     display: flex;
     flex-direction: row;
-    gap: 5px
+    gap: 5px;
+    width: 100%
   }
   #ctt {
     position: absolute;
@@ -338,3 +358,10 @@ br { display: none; }
   border-radius: 0;
 }
   }
+
+  @media (min-width: 600px) and (max-width: 900px) {
+    #opp {
+      font-size: 200%;
+      width: 100%
+    }
+}
