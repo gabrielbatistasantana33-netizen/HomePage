@@ -370,7 +370,7 @@ br { display: none; }
   #fs {
     position: static;
     display: block;
-    width: 150%; 
+    width: 250%; 
     height: auto;
     margin: 0 auto;
     border-radius: 20%;
