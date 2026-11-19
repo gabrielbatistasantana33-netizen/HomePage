@@ -385,11 +385,28 @@ br { display: none; }
     margin: 1rem auto 0;
   }
 }
-  }
 
-  @media (min-width: 600px) and (max-width: 900px) {
+  @media (min-width: 600px) and (max-width: 1199px) {
     #opp {
-      font-size: 200%;
+      font-size: 100%;
+      gap: 5%;
       width: 100%
     }
+
+    }
+
+@media (min-width: 1024px) {
+  #op {
+    width: 70%
+  }
+  #ctt {
+    white-space: nowrap;
+    height: 25%;
+   }
+   #db {
+    width: 3.5%;
+    height:87%;
+    position: absolute;
+    left: 92%;
+   }
 }
