@@ -338,7 +338,7 @@ br { display: none; }
 #s2 {
   position: static;
   display: block;
-  width: 50%;
+  width: 65%;
   height: auto;
   margin: 1rem auto 0;
 }
