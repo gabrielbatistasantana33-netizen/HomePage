@@ -55,9 +55,7 @@ body {
     border-top-left-radius: 16px;
     border-width: fit-content;
 }
-#logo {
-   width: 100%;
-}
+
 #op {
   display: flex;
     gap: 20px;
