@@ -70,6 +70,11 @@ body {
   gap: 5%;
 }
 
+#op1 a {
+  color: inherit;
+  text-decoration: none;
+}
+
 #op1:hover {
     color: #ffa552;
     text-shadow: 0 0 20px rgba(255, 247, 221, 0.79);
