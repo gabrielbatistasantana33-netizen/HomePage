@@ -217,12 +217,12 @@ br {
 }
 
 #fim {
-    position: static;
-    display: block;
-    width: 100%;
-    height: auto;
-    margin: 2rem auto;
-    border-radius: 2.5%;
+  position: static;
+  display: block;
+  width: 100%;
+  height: auto;
+  border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
 }
 
 @media (max-width: 768px) {
