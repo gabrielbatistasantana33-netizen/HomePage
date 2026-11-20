@@ -321,6 +321,8 @@ br {
   #fim {
     width: 95%;
     height: auto;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
     }
 #methover, #equiver, #equipever, #sn, #fs {
   position: static;
@@ -360,7 +362,8 @@ br { display: none; }
   width: 100%;
   height: auto;
   margin: 0;
-  border-radius: 0;
+  border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
 }
   #s1 {
     position: relative;
@@ -397,7 +400,10 @@ br { display: none; }
       gap: 5%;
       width: 100%
     }
-
+    #fim {
+      border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+    }
     }
 
 @media (min-width: 1024px) {
@@ -414,6 +420,10 @@ br { display: none; }
     position: absolute;
     left: 92%;
    }
+   #fim {
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+   }
 }
 
 @media (min-width: 600px) and (max-width: 1100px) {
@@ -422,5 +432,9 @@ br { display: none; }
     }
     #ctt {
       height: auto
+    }
+    #fim {
+      border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
     }
 }
