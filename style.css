@@ -24,6 +24,17 @@ body {
   animation: 1s fadeIn ease-in;
 }
 
+#tpver {
+  display: none
+}
+
+hr {
+  background-color: rgba(220, 198, 160, 0.55);
+  border: none;
+  height: 2px;
+  border-radius: 2.5%;
+}
+
 #studio {
     display: flex;
     flex-direction: row;
@@ -59,31 +70,17 @@ body {
 
 #op {
   display: flex;
-    gap: 20px;
+    gap: clamp(1rem, 2vw, 2rem);
     color:#e8d5b5;
     justify-content: flex-end;
     width: 100%;
     box-sizing: border-box;
+    width: 70%;
 }
 
 #opp {
   display: flex;
   gap: 5%;
-}
-
-#op1 a {
-  color: inherit;
-  text-decoration: none;
-}
-
-#op2 a {
-  color: inherit;
-  text-decoration: none;
-}
-
-#op3 a {
-  color: inherit;
-  text-decoration: none;
 }
 
 #op1:hover {
@@ -111,10 +108,34 @@ body {
     text-shadow: 0 0 20px rgba(255, 247, 221, 0.79);
 }
 
+#op4 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#op3 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#op1 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#op2 a {
+  color: inherit;
+  text-decoration: none;
+}
+
 #db {
   position: static;
   height: 100%;
-  width: 5%
+  width: 5%;
+  width: 3.5%;
+  height:87%;
+  position: absolute;
+  left: 92%;
 }
 
 #ctt {background: linear-gradient(135deg, #f1e2bd 0%, #d4b06a 55%, #b8924a 100%);
@@ -123,11 +144,15 @@ body {
   border-radius: 999px;
   padding: 6px 18px;
   font-weight: 700;
+  white-space: nowrap;
+  height: 25%;
 }
+
 #ctt:hover {
     transform: translateY(-3px);
   box-shadow: 0 4px 16px rgba(212, 176, 106, 0.55);
 }
+
 
 #fs {
     border-radius: 4%;
@@ -237,7 +262,7 @@ br {
 }
 
 @media (max-width: 768px) {
-  #studio {
+   #studio {
     font-size: 0.5rem;
     gap: 0.5px;
     flex-direction: column;
@@ -247,18 +272,27 @@ br {
     border-top-left-radius: 16px;
     position: sticky;
   }
-  #opp {
+   #opp {
     display: flex;
     flex-direction: row;
     gap: 5px;
     width: 100%
-  }
-  #ctt {
+   }
+    #ctt {
     position: absolute;
     top: 1rem;
     right: 12%;
     width: 14%;
+    white-space: normal;
 }
+  #db {
+    position: absolute;
+    left: 89.5%;
+    top: 0rem;
+    width: 9%
+  }
+}
+
   #fs {
     max-width: 100%;
     height: auto;
@@ -279,12 +313,6 @@ br {
     left: 26%;
     width: 65%;
     top: 15rem;
-  }
-  #db {
-    position: absolute;
-    left: 89.5%;
-    top: -0.5rem;
-    width: 9%
   }
   #metho {
     display: none
@@ -403,78 +431,47 @@ br { display: none; }
     height: auto;
     margin: 1rem auto 0;
   }
-}
 
-
-  @media (min-width: 600px) and (max-width: 1199px) {
-     #studio {
-    font-size: 0.5rem;
-    gap: 0.5px;
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    border-top-right-radius: 16px;
-    border-top-left-radius: 16px;
-    position: sticky;
-  }
-   #opp {
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-    width: 100%
-   }
+@media (min-width: 600px) and (max-width: 1199px) {
+   #op {
+        font-size: clamp(1rem, 1vw, 1rem)
+    }
+    #op #opp {
+        font-size: clamp(1rem, 1vw, 1rem);
+        width:90%
+    }
     #ctt {
-    position: absolute;
-    top: 1rem;
-    right: 12%;
-    width: 14%;
-    white-space: normal;
-}
-  #db {
+      height: auto;
+      width: auto;
+      white-space: normal;
+    }
+    #db {
     position: absolute;
     left: 89.5%;
     top: 0rem;
-    width: 9%
-  }
-    #fim {
-      border-top-right-radius: 16px;
-    border-top-left-radius: 16px;
+    width: 6%
+    }
+    #content img {
+         display:block;
+        position: static;
+  display: block;
+  width: 90%;
+  height: auto;
+  margin: 2rem auto;
     }
     }
-
-@media (min-width: 1024px) {
-  #op {
-    width: 70%
-  }
-  #ctt {
-    white-space: nowrap;
-    height: 25%;
-   }
-   #db {
-    width: 3.5%;
-    height:87%;
-    position: absolute;
-    left: 92%;
-   }
-   #fim {
-    border-top-right-radius: 16px;
-    border-top-left-radius: 16px;
-   }
-}
-
-@media (min-width: 600px) and (max-width: 1100px) {
-    #op {
-        font-size: clamp(1rem, 1vw, 1rem)
-    }
-    #ctt {
-      height: auto
-    }
-    #fim {
-      border-top-right-radius: 16px;
-    border-top-left-radius: 16px;
+     @media (min-width: 769px) and (max-width: 1450px) {
+    #db {
+        position: absolute;
+        left: auto;
+        right: 3%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: clamp(25px, 4vw, 45px);
+        height: auto;
+        object-fit: contain;
     }
 }
-
 @keyframes fadeIn {
   from {
     opacity: 0;
