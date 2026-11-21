@@ -438,7 +438,6 @@ br { display: none; }
     }
     #op #opp {
         font-size: clamp(1rem, 1vw, 1rem);
-        width:90%
     }
     #ctt {
       height: auto;
