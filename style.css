@@ -434,7 +434,7 @@ br { display: none; }
 
 @media (min-width: 600px) and (max-width: 1199px) {
    #op {
-        font-size: clamp(1rem, 1vw, 1rem)
+        font-size: clamp(0.5rem, 0.5vw, 1rem)
     }
     #op #opp {
         font-size: clamp(1rem, 1vw, 1rem);
@@ -460,6 +460,19 @@ br { display: none; }
     }
     }
      @media (min-width: 769px) and (max-width: 1450px) {
+    #db {
+        position: absolute;
+        left: auto;
+        right: 3%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: clamp(25px, 4vw, 45px);
+        height: auto;
+        object-fit: contain;
+    }
+}
+
+ @media (min-width: 769px) and (max-width: 1450px) {
     #db {
         position: absolute;
         left: auto;
