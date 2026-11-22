@@ -153,116 +153,82 @@ hr {
   box-shadow: 0 4px 16px rgba(212, 176, 106, 0.55);
 }
 
-
-#fs {
-    border-radius: 4%;
-    display:block;
-    margin:auto
-}
-
-#cx {
-  position: absolute;
-  left: 200px;
-  top: 140px;
-  border-radius: 15%;
-}
-
-#cx:hover {
-  transform: translateY(-3px);
-}
-
-#s2 {
-    position:absolute;
-    left: 1100px;
-    top: 170px;
-    border-radius: 7%;
-}
-
-#s2:hover {
-  transform: translateY(-30px);
-}
-
-#linha1 {
-  background-color: rgba(220, 198, 160, 0.55);
-  border: none;
-  height: 2px;
-  border-radius: 2.5%;
-}
-
-#metho {
-  position: absolute;
-  left: 200px;
-  top: 950px
-}
-
-#linha2 {
-  background-color: rgba(220, 198, 160, 0.55);
-  border: none;
-  height: 2px;
-  border-radius: 2.5%;
-}
-
-#equi {
-  position: absolute;
-  left: 200px;
-  top: 1800px
-}
-
-#mp {
-  color:#e8d5b5;
-  font-family: "Limelight", sans-serif;
-  font-weight: 700;
-  margin-left: 200px;
-  padding: 20px
-}
-
-#oc {
-  position: absolute;
-  left: 200px;
-}
-
-#methover {
+#methover, #equipever, #equiver {
   display: none
 }
 
-#equipever {
-    display: none;
-}
-#equiver {
-  display: none
-}
-
-br {
-  display: none
-}
-
-#s2 {
-  position: static;
-  display: block;
-  width: 45%;
-  height: auto;
-  margin: 2rem auto;
-}
-
-#metho, #equi, #equipe, #sn, #fs, #oc {
-  position: static;
+#metho, #equi {
+   position: static;
   display: block;
   width: 92%;
   height: auto;
   margin: 2rem auto;
 }
 
-#fim {
-  position: static;
+#fim, #sn {
+     position: static;
   display: block;
   width: 100%;
   height: auto;
-  border-top-right-radius: 16px;
+}
+
+#fim {
+      border-top-right-radius: 16px;
     border-top-left-radius: 16px;
 }
 
+#oc {
+  display: block;
+  margin: 2rem auto;
+  width: 92%;
+  position: static;
+  height: auto
+}
+
+#mp {
+   color:#e8d5b5;
+  font-family: "Limelight", sans-serif;
+  font-weight: 700;
+  padding: 15px;
+  font-size: clamp(2rem, 3vw, 4rem);
+  margin-left: 4rem;
+  display: flex;
+}
+
+#fs {
+  display: block;
+  margin: 2rem auto;
+  width: 90%;
+  position: static;
+  height: auto;
+  border-radius: 10%;
+  transform: translateY(-2rem);
+}
+
+#s1 {
+  position: relative;
+}
+
+#cx {
+     position: static;
+  display: block;
+  width:clamp(20px, 40vw, 200px);
+  height: auto;
+  position: absolute;
+  top: -2%;
+  left: 10%
+}
+
+#s2 {
+   display: block;
+  margin: 2rem auto;
+  width: 40%;
+  position: static;
+  height: auto 
+}
+
 @media (max-width: 768px) {
-   #studio {
+    #studio {
     font-size: 0.5rem;
     gap: 0.5px;
     flex-direction: column;
@@ -291,158 +257,49 @@ br {
     top: 0rem;
     width: 9%
   }
-}
-
-  #fs {
-    max-width: 100%;
-    height: auto;
-    border-radius: 20%;
-  }
-  #s1 {
-    position: relative
-  }
   #cx {
-    width: 13%;
-    position: absolute;
-    left: 5%;
-    border-radius: 10%;
-    top: 0.5rem;
+    width: 10%
   }
-  #s2 {
-    position:absolute;
-    left: 26%;
-    width: 65%;
-    top: 15rem;
+  #fs {
+    width: 98%
   }
-  #metho {
-    display: none
-  }
-  #pt2 {
-    position: relative
-  }
-  #methover {
-    display: block;
-    width: 90%;
-    height: auto;
-  }
-  #equi {
-    display: none
-  }
-  #equiver {
-    display: block;
-    width: 90%;
-    height: auto;
-  }
-  #oc{
-    display: none
-  }
-  #professionals {
-    position: relative;
-  }
-  #equipever {
-    display: block;
-    width: 90%;
-    height: auto;
-  }
-  #professionals > h1 {
-    font-size: 1.5rem;
-  }
-  #af {
-    position: relative;
-  }
-  #sn {
-    width: 98%;
-    height: auto;
-    position:absolute;
-    top: -15rem;
-    margin: auto;
-  }
-  #fim {
-    width: 95%;
-    height: auto;
-    border-top-right-radius: 16px;
-    border-top-left-radius: 16px;
-    }
-#methover, #equiver, #equipever, #sn, #fs {
-  position: static;
-  display: block;
-  width: 92%;
-  height: auto;
-  margin: 2rem auto;
-}
-#professionals > h1 {
-  position: static;
-  margin: 1.5rem auto 0;
-  text-align: center;
-  font-size: 1.5rem;
-}
-br { display: none; }
-#pt2, #pt3, #professionals, #af {
-  position: static;
-  margin: 2rem 0;
-}
-#s2 {
-  position: static;
-  display: block;
-  width: 65%;
-  height: auto;
-  margin: 1rem auto 0;
-}
-
-#s1 {
-  margin-bottom: 2rem;
-}
-#en {
-  margin: 0;
-}
-#fim {
-  position: static;
-  display: block;
-  width: 100%;
-  height: auto;
-  margin: 0;
-  border-top-right-radius: 16px;
-    border-top-left-radius: 16px;
-}
   #s1 {
     position: relative;
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-    margin: 0 0 2rem;
-    padding: 0;
   }
-
-  #fs {
-    position: static;
-    display: block;
-    width: 250%; 
-    height: auto;
-    margin: 0 auto;
-    border-radius: 20%;
-  }
-
   #s2 {
-    position: static;
-    display: block;
-    width: 75%;
-    max-width: 100%;
-    height: auto;
-    margin: 1rem auto 0;
+    width: 80%;
   }
+  #metho, #equi, #oc {
+    display: none;
+  }
+  #methover, #equiver, #equipever {
+      display: block;
+  margin: 2rem auto;
+  width: 95%;
+  position: static;
+  height: auto
+  }
+  #mp {
+     font-size: clamp(1.5rem, 2vw, 2rem);
+    white-space: normal;
+    margin: auto
+  }
+}
 
 @media (min-width: 600px) and (max-width: 1199px) {
    #op {
-        font-size: clamp(0.5rem, 0.5vw, 1rem)
+        font-size: clamp(1rem, 1vw, 1rem)
     }
     #op #opp {
-        font-size: clamp(1rem, 1vw, 1rem);
+        font-size: clamp(1rem, 1vw, 1rem)
     }
     #ctt {
       height: auto;
       width: auto;
       white-space: normal;
+    }
+    #op {
+        position: static;
     }
     #db {
     position: absolute;
@@ -450,16 +307,12 @@ br { display: none; }
     top: 0rem;
     width: 6%
     }
-    #content img {
-         display:block;
-        position: static;
-  display: block;
-  width: 90%;
-  height: auto;
-  margin: 2rem auto;
+    #cx {
+      width: 15%
     }
     }
-     @media (min-width: 769px) and (max-width: 1450px) {
+
+      @media (min-width: 769px) and (max-width: 1450px) {
     #db {
         position: absolute;
         left: auto;
@@ -472,18 +325,7 @@ br { display: none; }
     }
 }
 
- @media (min-width: 769px) and (max-width: 1450px) {
-    #db {
-        position: absolute;
-        left: auto;
-        right: 3%;
-        top: 50%;
-        transform: translateY(-50%);
-        width: clamp(25px, 4vw, 45px);
-        height: auto;
-        object-fit: contain;
-    }
-}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -492,7 +334,6 @@ br { display: none; }
     opacity: 1;
   }
 }
-
 .reveal {
   animation: reveal linear both;
   animation-timeline: view();
